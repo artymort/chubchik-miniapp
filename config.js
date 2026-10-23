@@ -1,2 +1,2 @@
 // For GitHub Pages: set the public HTTPS API origin here after deployment.
-window.CHUBCHIK_API_BASE = "";
+window.CHUBCHIK_API_BASE = "https://ungrudged-teena-depreciatively.ngrok-free.dev";
