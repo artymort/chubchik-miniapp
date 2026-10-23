@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff9ef">
+  <title>Чубчик · Управление</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="./config.js"></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">✦</span><span>Чубчик<small>управление салоном</small></span></div>
+      <div class="header-right"><span id="preview-tag" class="preview-tag" hidden>Предпросмотр</span><span class="city-chip">📍 Владивосток</span></div>
+    </header>
+    <div class="layout">
+      <nav class="side-nav" aria-label="Разделы">
+        <div class="nav-caption">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+        <button data-tab="bookings" class="nav-item active"><span>📋</span> Записи</button>
+        <button data-tab="masters" class="nav-item"><span>👩🏻‍🎨</span> Мастера</button>
+        <button data-tab="services" class="nav-item"><span>✨</span> Услуги</button>
+        <div class="nav-note"><span>💡</span><p>Все изменения сразу отражаются в боте записи.</p></div>
+      </nav>
+      <main id="content" class="content" aria-live="polite"></main>
+    </div>
+    <nav class="bottom-nav" aria-label="Разделы">
+      <button data-tab="bookings" class="active"><span>📋</span>Записи</button>
+      <button data-tab="masters"><span>👩🏻‍🎨</span>Мастера</button>
+      <button data-tab="services"><span>✨</span>Услуги</button>
+    </nav>
+  </div>
+  <div id="overlay" class="overlay" hidden></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
